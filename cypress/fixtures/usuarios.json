@@ -1,0 +1,23 @@
+{
+  "loginInvalido": {
+    "email": "usuario-invalido@example.com",
+    "senha": "senha-incorreta"
+  },
+  "novoUsuario": {
+    "nome": "Roberto Teste",
+    "senha": "PgatsTeste2026!",
+    "diaNascimento": "10",
+    "mesNascimento": "5",
+    "anoNascimento": "1990",
+    "primeiroNome": "Roberto",
+    "sobrenome": "Teste",
+    "empresa": "PGATS",
+    "endereco": "Rua dos Testes, 100",
+    "complemento": "Apartamento 10",
+    "pais": "Canada",
+    "estado": "Ontario",
+    "cidade": "Toronto",
+    "cep": "M5V 2T6",
+    "telefone": "11999999999"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "primeiroProduto": {
+    "nome": "Blue Top",
+    "categoria": "Women > Tops",
+    "preco": "Rs. 500",
+    "disponibilidade": "In Stock",
+    "condicao": "New",
+    "marca": "Polo"
+  },
+  "pesquisa": {
+    "termo": "Blue Top",
+    "nomesEsperados": [
+      "Blue Top"
+    ]
+  }
+}

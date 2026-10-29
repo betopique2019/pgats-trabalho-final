@@ -1,0 +1,18 @@
+{
+  "name": "pgats-trabalho-final",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Trabalho final de automacao de testes Web com Cypress - PGATS",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run --browser chrome --spec cypress/e2e/trabalho-final.cy.js"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "16.2.1",
+    "cypress-mochawesome-reporter": "5.0.0"
+  },
+  "allowScripts": {
+    "cypress@16.2.1": true
+  }
+}

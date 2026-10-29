@@ -1,0 +1,13 @@
+node_modules/
+cypress/reports/
+cypress/screenshots/
+cypress/videos/
+
+.env
+.env.*
+!.env.example
+cypress.env.json
+
+npm-debug.log*
+.DS_Store
+Thumbs.db
