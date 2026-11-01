@@ -7,6 +7,7 @@ const seletores = {
   botaoPesquisar: '#submit_search',
   detalhesPrimeiroProduto: 'a[href="/product_details/1"]',
   informacoesProduto: '.product-information',
+  descricaoProduto: 'p',
   nomeProduto: '.product-information h2',
   precoProduto: '.product-information span span'
 };
@@ -49,18 +50,20 @@ function validarDetalhesProduto(produto) {
     .and('have.text', produto.preco);
 
   cy.get(seletores.informacoesProduto).within(() => {
-    cy.contains('p', `Category: ${produto.categoria}`)
-      .should('be.visible');
+    cy.contains(
+      seletores.descricaoProduto,
+      `Category: ${produto.categoria}`
+    ).should('be.visible');
 
-    cy.contains('p', 'Availability:')
+    cy.contains(seletores.descricaoProduto, 'Availability:')
       .should('be.visible')
       .and('contain.text', produto.disponibilidade);
 
-    cy.contains('p', 'Condition:')
+    cy.contains(seletores.descricaoProduto, 'Condition:')
       .should('be.visible')
       .and('contain.text', produto.condicao);
 
-    cy.contains('p', 'Brand:')
+    cy.contains(seletores.descricaoProduto, 'Brand:')
       .should('be.visible')
       .and('contain.text', produto.marca);
   });
